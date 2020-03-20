@@ -1,20 +1,41 @@
-/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v15/rax8HiqOu8IVPmn7f4xs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Heebo'), local('Heebo-Regular'), url(https://fonts.gstatic.com/s/heebo/v5/NGS6v5_NC0k9P9H2TbQ.ttf) format('truetype');
+}
+/**********variables*******************/
+/**********mixins****************/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   max-width: 100%;
-  border: 1px solid black;
 }
 html,
 body {
   height: 100%;
-  background-color: gray;
+  background-color: lightgray;
 }
 .nav {
   display: flex;
   justify-content: flex-end;
   width: 85%;
+}
+a {
+  font-family: 'Heebo', sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 .image {
   width: 25%;
@@ -24,9 +45,8 @@ body {
   display: flex;
   justify-content: center;
   font-size: 1.8rem;
-}
-section {
-  background-color: white;
+  border-bottom: solid black 1px;
+  font-family: 'Anton', sans-serif;
 }
 .skills {
   padding: 0.5%;
@@ -39,8 +59,17 @@ section {
 }
 .middle {
   display: flex;
-  padding: 1%;
 }
 .history {
   padding: 1%;
+}
+.jobs {
+  margin: 1%;
+}
+p {
+  font-family: 'Bitter', serif;
+  /*	.border();  */
+}
+h2 {
+  font-family: 'Heebo', sans-serif;
 }

@@ -1,61 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Heebo&display=swap');
 
-/* Set every element's box-sizing to border-box */
-* {
-	box-sizing: border-box;
-	
 
-	
+/**********variables*******************/
+@h2-fontsize: 'Heebo', sans-serif;
+@para-fontsize:'Bitter', serif;
+
+/**********mixins****************/
+.border(){
+ border:2px solid red;
+ padding:2%;
+}
+.center(){
+	display:flex;
+	justify-content: center;
+
+}
+
+
+*{
+box-sizing: border-box;
+padding:0;
+margin:0;
+max-width: 100%;
+
 }
 
 html, body {
-	height: 100%;
-	
+height: 100%;
+background-color:lightgray;
+}
+
 
 
 
 .nav {
-	display:flex;
-	justify-content:flex-end;
-	width: 85%;
-
-}
-
-.nav a{
-		
+display:flex;
+justify-content:flex-end;
+width: 85%;}
+a{	
+font-family: 'Heebo', sans-serif;
+text-decoration: none;
+font-size: 1.5rem;
+color:white;
+text-shadow: 2px 2px black;
 }
 .image{
-	width: 25%;
-	padding:1%;
+width: 25%;
+padding:1%;
 }
 .title{
-	display:flex;
-	justify-content: center;
-	font-size: 1.8rem;
-}
-section{
-	background-color: white;
+display:flex;
+justify-content: center;
+font-size: 1.8rem;
+border-bottom: solid black 1px;
+font-family: 'Anton', sans-serif;
 }
 
 .skills{
-	padding:0.5%;
-
+padding:0.5%;
 }
 .intro{
-	padding:0.5%;
+padding:0.5%;
 }
 .objective{
-	padding:1%;
+padding:1%;
+
 }
 .middle{
-	display:flex;
-	
+display:flex;
+
+}
 .history{
-	padding:1%;
+padding:1%;
 
 }
 .jobs{
-	margin:3%;
+margin:1%;
 }
-.contact{
-	padding-top: 1%;
+
+p{
+	font-family: @para-fontsize;
+/*	.border();  */
+}
+h2{
+	font-family: @h2-fontsize;
 }
